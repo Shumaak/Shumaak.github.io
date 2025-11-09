@@ -113,3 +113,27 @@ header p {
     font-size: 1.1rem;
     opacity: 0.8;
 }
+
+@media (max-width: 768px) {
+    .back-arrow {
+        position: fixed;
+        /* make it stay on screen even if header scrolls */
+        top: 15px;
+        /* anchor to the top */
+        left: 15px;
+        /* anchor to the left */
+        transform: none;
+        /* remove vertical centering */
+    }
+
+    .back-icon {
+        width: 40px;
+        /* slightly smaller for mobile */
+        opacity: 0.8;
+    }
+
+    .page-header {
+        padding-top: 60px;
+        /* space so the arrow doesn’t overlap text */
+    }
+}
