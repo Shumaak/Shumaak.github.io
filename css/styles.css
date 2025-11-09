@@ -65,25 +65,51 @@ header p {
     margin-top: 10px;
 }
 
+.page-header {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* vertically centers everything */
+    justify-content: center;
+    /* keeps text centered horizontally */
+    padding: 20px 0;
+}
+
+/* The arrow sits on the far left but stays vertically centered */
 .back-arrow {
     position: absolute;
     left: 20px;
-    top: 20px;
-    display: inline-block;
+    top: 57%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .back-icon {
-    width: 32px;
+    width: 50px;
     height: auto;
-    opacity: 0.6;
+    opacity: 0.7;
+    filter: brightness(0) invert(1);
+    /* makes dark image white */
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .back-icon:hover {
     opacity: 1;
-    transform: translateX(-3px);
+    transform: translateX(-4px) scale(1.05);
 }
 
-header {
-    position: relative;
+.header-text h1 {
+    margin-bottom: 8px;
+}
+
+.header-text p {
+    color: #ccc;
+    font-size: 1.1rem;
+    opacity: 0.8;
 }
