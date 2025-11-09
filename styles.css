@@ -40,11 +40,12 @@ header p {
 }
 
 .project-card {
-    background: white;
+    background: #f9fafc;
+    /* mild color */
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, background 0.2s ease;
     text-decoration: none;
     color: inherit;
     display: flex;
@@ -53,6 +54,8 @@ header p {
 }
 
 .project-card:hover {
+    background: #eef3f9;
+    /* slightly darker on hover */
     transform: translateY(-3px);
 }
 
