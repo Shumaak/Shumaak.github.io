@@ -78,7 +78,6 @@ header p {
     padding: 20px 0;
 }
 
-/* --- Fixed top navigation bar --- */
 .top-nav {
     position: fixed;
     top: 0;
@@ -88,7 +87,6 @@ header p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* arrow left, menu right */
     align-items: center;
     padding: 0 24px;
     background: rgba(14, 14, 16, 0.6);
@@ -98,13 +96,11 @@ header p {
     box-sizing: border-box;
 }
 
-/* --- Main page alignment (menu only) --- */
+
 .home-nav {
     justify-content: flex-end;
-    /* pushes menu to the right */
 }
 
-/* --- Back Arrow --- */
 .back-arrow {
     display: flex;
     align-items: center;
@@ -117,7 +113,6 @@ header p {
     height: auto;
     opacity: 0.8;
     filter: brightness(0) invert(1);
-    /* makes dark icons white */
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
@@ -126,7 +121,6 @@ header p {
     transform: translateX(-4px) scale(1.05);
 }
 
-/* --- PNG Menu Icon --- */
 .menu-icon {
     display: flex;
     align-items: center;
@@ -142,7 +136,6 @@ header p {
     height: auto;
     opacity: 0.8;
     filter: brightness(0) invert(1);
-    /* white look */
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
@@ -151,10 +144,8 @@ header p {
     transform: scale(1.05);
 }
 
-/* --- Header Text --- */
 .page-header {
     margin-top: 100px;
-    /* clears fixed top bar */
     text-align: center;
 }
 
@@ -168,7 +159,6 @@ header p {
     opacity: 0.8;
 }
 
-/* --- Mobile tweaks --- */
 @media (max-width: 768px) {
     .top-nav {
         height: 60px;
