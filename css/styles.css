@@ -65,6 +65,7 @@ header p {
     margin-top: 10px;
 }
 
+/* --- Header layout --- */
 .page-header {
     position: relative;
     max-width: 900px;
@@ -73,35 +74,88 @@ header p {
     text-align: center;
     display: flex;
     align-items: center;
-    /* vertically centers everything */
     justify-content: center;
-    /* keeps text centered horizontally */
     padding: 20px 0;
 }
 
-/* The arrow sits on the far left but stays vertically centered */
+/* --- Fixed top navigation bar --- */
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* arrow left, menu right */
+    align-items: center;
+    padding: 0 24px;
+    background: rgba(14, 14, 16, 0.6);
+    backdrop-filter: blur(8px);
+    border-bottom: 2px solid #2a2a2a;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+/* --- Main page alignment (menu only) --- */
+.home-nav {
+    justify-content: flex-end;
+    /* pushes menu to the right */
+}
+
+/* --- Back Arrow --- */
 .back-arrow {
-    position: absolute;
-    left: 20px;
-    top: 57%;
-    transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .back-icon {
-    width: 50px;
+    width: 40px;
     height: auto;
-    opacity: 0.7;
+    opacity: 0.8;
     filter: brightness(0) invert(1);
-    /* makes dark image white */
+    /* makes dark icons white */
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .back-icon:hover {
     opacity: 1;
     transform: translateX(-4px) scale(1.05);
+}
+
+/* --- PNG Menu Icon --- */
+.menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.menu-img {
+    width: 42px;
+    height: auto;
+    opacity: 0.8;
+    filter: brightness(0) invert(1);
+    /* white look */
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.menu-img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* --- Header Text --- */
+.page-header {
+    margin-top: 100px;
+    /* clears fixed top bar */
+    text-align: center;
 }
 
 .header-text h1 {
@@ -114,26 +168,22 @@ header p {
     opacity: 0.8;
 }
 
+/* --- Mobile tweaks --- */
 @media (max-width: 768px) {
-    .back-arrow {
-        position: fixed;
-        /* make it stay on screen even if header scrolls */
-        top: 15px;
-        /* anchor to the top */
-        left: 15px;
-        /* anchor to the left */
-        transform: none;
-        /* remove vertical centering */
+    .top-nav {
+        height: 60px;
+        padding: 0 16px;
     }
 
     .back-icon {
-        width: 40px;
-        /* slightly smaller for mobile */
-        opacity: 0.8;
+        width: 38px;
+    }
+
+    .menu-img {
+        width: 36px;
     }
 
     .page-header {
-        padding-top: 60px;
-        /* space so the arrow doesn’t overlap text */
+        margin-top: 80px;
     }
 }
