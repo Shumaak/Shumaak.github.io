@@ -1,64 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shumaak | Unity Game Developer</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shumaak - Unity Game Developer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SHUMAAK</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-    <header>
-        <h1>Shumaak</h1>
-        <p>Unity Game Developer</p>
-        <button class="scroll-btn"
-            onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">
-            View My Projects
-        </button>
-    </header>
-
-    <section class="about" id="about">
-        <h2>About Me</h2>
-        <p>Hi! I’m Shumaak, a 17 year old Unity developer focused on crafting immersive and creative game experiences. I
-            love blending art, design, and code to bring interactive worlds to life.</p>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Shumaak</h1>
+            <p class="subtitle">Unity Game Developer</p>
+            <a href="#projects" class="cta-button">View My Projects</a>
+        </div>
     </section>
 
-    <section class="contact" id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:simonjares123@gmail.com">simonjares123@gmail.com</a></p>
-        <p>Discord: <a href="https://discordapp.com/users/789194822316720168" target="_blank">Shumaak</a></p>
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>Hi! I'm Shumaak, a 17 year old Unity developer focused on crafting immersive and creative game experiences. I love blending art, design, and code to bring interactive worlds to life.</p>
+            </div>
+        </div>
     </section>
 
-    <section class="projects" id="projects">
-        <h2>Projects</h2>
-
-        <a class="project-card" href="#">
-            <h3>Project One</h3>
-            <p>A short description of the game or prototype.</p>
-            <img src="Images/1.webp" alt="Project 1 Image" class="project-img">
-        </a>
-
-        <a class="project-card" href="#">
-            <h3>Project Two</h3>
-            <p>A short description of the game or prototype.</p>
-            <img src="Images/2.webp" alt="Project 2 Image" class="project-img">
-        </a>
-
-
-        <a class="project-card" href="#">
-            <h3>Project Three</h3>
-            <p>A short description of the game or prototype.</p>
-            <img src="Images/3.webp" alt="Project 3 Image" class="project-img">
-        </a>
-        <a class="project-card" href="#">
-            <h3>Project Four</h3>
-            <p>A short description of the game or prototype.</p>
-            <img src="Images/3.webp" alt="Project 3 Image" class="project-img">
-        </a>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image">Project 1 Image</div>
+                    </div>
+                    <h3>Project One</h3>
+                    <p>A short description of the game or prototype.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image">Project 2 Image</div>
+                    </div>
+                    <h3>Project Two</h3>
+                    <p>A short description of the game or prototype.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image">Project 3 Image</div>
+                    </div>
+                    <h3>Project Three</h3>
+                    <p>A short description of the game or prototype.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image">Project 3 Image</div>
+                    </div>
+                    <h3>Project Four</h3>
+                    <p>A short description of the game or prototype.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <p><strong>Email:</strong> <a href="mailto:simonjares123@gmail.com">simonjares123@gmail.com</a></p>
+                <p><strong>Discord:</strong> Shumaak</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Shumaak. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
+
