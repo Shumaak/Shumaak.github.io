@@ -1,38 +1,54 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Game Dev Portfolio</title>
-    <link rel="icon" type="image/jpg" href="Images/favicon.jpg">
+    <title>Shumaak | Unity Game Developer</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <header class="page-header">
-        <div class="top-nav home-nav">
-            <a href="#" class="menu-icon">
-                <img src="Images/Menu.svg" alt="Menu" class="menu-img">
-            </a>
-        </div>
 
-        <div class="header-text">
-            <h1>Portfolio</h1>
-            <p></p>
-        </div>
+    <header>
+        <h1>Shumaak</h1>
+        <p>Unity Game Developer</p>
+        <button class="scroll-btn" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">
+            View My Projects
+        </button>
     </header>
 
-    <section class="projects">
-        <a class="project-card" href="html/projects.html">
-            <h3>Gamedev Projects</h3>
-            <p>View my projects and prototypes.</p>
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>Hi! I’m Shumaak, a passionate Unity developer focused on crafting immersive and creative game experiences. I love blending art, design, and code to bring interactive worlds to life.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/shumaak</a></p>
+        <p>Itch.io: <a href="#" target="_blank">shumaak.itch.io</a></p>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+
+        <a class="project-card" href="#">
+            <h3>Project One</h3>
+            <p>A short description of the game or prototype.</p>
+            <img src="Images/1.webp" alt="Project 1 Image" class="project-img">
         </a>
 
-        <a class="project-card" href="html/hobbies.html">
-            <h3>Hobbies</h3>
-            <p>See my creative hobbies and side interests.</p>
+        <a class="project-card" href="#">
+            <h3>Project Two</h3>
+            <p>A short description of the game or prototype.</p>
+            <img src="Images/2.webp" alt="Project 2 Image" class="project-img">
+        </a>
+
+        <a class="project-card" href="#">
+            <h3>Project Three</h3>
+            <p>A short description of the game or prototype.</p>
+            <img src="Images/3.webp" alt="Project 3 Image" class="project-img">
         </a>
     </section>
-</body>
 
+</body>
 </html>
