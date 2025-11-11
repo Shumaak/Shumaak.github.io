@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-padding-top: 100px; /* adjust to match navbar height */
+}
+
 :root {
     --primary: #007bff;
     --dark: #1a1a1a;
