@@ -19,7 +19,11 @@
                     fetchpriority="high" decoding="async" />
                 <span class="logo-text">SHUMAAK</span>
             </a>
-            <div class="nav-links">
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="primary-nav">
+                <img src="Images/Menu.svg" alt="" class="nav-toggle-icon" width="30" height="30" aria-hidden="true">
+            </button>
+            <div class="nav-links" id="primary-nav">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
@@ -120,6 +124,45 @@
     <footer class="footer">
         <p>&copy; 2025 Shumaak. All rights reserved.</p>
     </footer>
+
+    <script>
+        (() => {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navLinks = document.getElementById('primary-nav');
+            if (!navToggle || !navLinks) return;
+
+            const closeMenu = () => {
+                if (!navLinks.classList.contains('is-open')) return;
+                navLinks.classList.remove('is-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+                navToggle.setAttribute('aria-label', 'Open menu');
+            };
+
+            navToggle.addEventListener('click', () => {
+                const isOpen = navLinks.classList.toggle('is-open');
+                navToggle.setAttribute('aria-expanded', String(isOpen));
+                navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+            });
+
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
+
+            document.addEventListener('click', (event) => {
+                if (navLinks.classList.contains('is-open')
+                    && !navLinks.contains(event.target)
+                    && !navToggle.contains(event.target)) {
+                    closeMenu();
+                }
+            });
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768) {
+                    closeMenu();
+                }
+            });
+        })();
+    </script>
 </body>
 
 </html>
