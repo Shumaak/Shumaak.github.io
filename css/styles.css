@@ -5,7 +5,8 @@
 }
 
 html {
-    scroll-padding-top: 70px; /* adjust to match navbar height */
+    scroll-padding-top: 70px;
+    /* adjust to match navbar height */
 }
 
 :root {
@@ -48,6 +49,7 @@ body {
         transform: translateY(-100%);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -73,8 +75,10 @@ body {
     font-weight: 700;
     color: var(--white);
     letter-spacing: 1px;
-    text-decoration: none; /* remove underline */
-    margin-right: 1rem; /* keep space between logo and nav links */
+    text-decoration: none;
+    /* remove underline */
+    margin-right: 1rem;
+    /* keep space between logo and nav links */
 }
 
 .logo .nav-pfp {
@@ -83,8 +87,8 @@ body {
     border-radius: 50%;
     object-fit: cover;
     display: inline-block;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.35);
-    border: 2px solid rgba(255,255,255,0.06);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+    border: 2px solid rgba(255, 255, 255, 0.06);
 }
 
 .logo .logo-text {
@@ -183,7 +187,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--dark); /* fallback */
+    background: var(--dark);
+    /* fallback */
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -194,7 +199,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: url('../Images/IndexBackground.webp') center/cover no-repeat;
+    background: url('../Images/General/MainBackground.webp') center/cover no-repeat;
     filter: blur(12px);
     transform: scale(1.06);
     z-index: 0;
@@ -246,9 +251,11 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    box-sizing: border-box; /* ensure border is drawn inside the wrapper */
+    box-sizing: border-box;
+    /* ensure border is drawn inside the wrapper */
     border-radius: 50%;
-    border: 3px solid var(--light); /* solid, fully opaque ring */
+    border: 3px solid var(--light);
+    /* solid, fully opaque ring */
     pointer-events: none;
 }
 
@@ -257,6 +264,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -323,6 +331,7 @@ section {
     object-position: center;
     display: block;
 }
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -399,35 +408,15 @@ section {
 .project-body {
     position: relative;
     padding: 1.5rem;
-    overflow: hidden;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.project-body::before,
-.project-body::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-}
-
-.project-body::before {
-    background: url("../Images/IndexBackground.webp") center/cover no-repeat;
-    filter: blur(10px);
-    transform: scale(1.1);
-    opacity: 0.8;
-}
-
-.project-body::after {
-    background: rgba(20, 20, 20, 0.75);
-}
-
-.project-body > * {
-    position: relative;
-    z-index: 1;
+    background-color: var(--light);
+    background-image: none;
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
 }
 
 .contact {
@@ -531,31 +520,31 @@ section {
     .nav-container {
         padding: 0 1.25rem;
     }
-    
+
     .logo {
         font-size: 1.1rem;
     }
-    
+
     .nav-links {
         right: 1.25rem;
         left: 1.25rem;
         width: auto;
         min-width: 0;
     }
-    
+
     .nav-links a {
         font-size: 1rem;
     }
-    
+
     .hero {
         padding: 0 1rem;
         min-height: 100vh;
     }
-    
+
     .hero h1 {
         font-size: clamp(2rem, 12vw, 3.5rem);
     }
-    
+
     .pfp-wrap {
         width: 130px;
         height: 130px;
@@ -568,32 +557,32 @@ section {
         right: 0;
         bottom: 0;
     }
-    
+
     .subtitle {
         font-size: clamp(1rem, 5vw, 1.4rem);
     }
-    
+
     .cta-button {
         padding: 0.75rem 1.75rem;
         font-size: 0.95rem;
         width: 100%;
         max-width: 300px;
     }
-    
+
     section {
         padding: 3rem 1rem;
     }
-    
+
     .section-title {
         font-size: clamp(1.75rem, 8vw, 2.5rem);
         margin-bottom: 2rem;
     }
-    
+
     .about-content {
         font-size: 1rem;
         padding: 0 0.5rem;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -602,26 +591,26 @@ section {
     .project-image {
         height: 200px;
     }
-    
+
     .project-card {
         margin: 0 auto;
         max-width: 500px;
     }
-    
+
     .contact-content {
         padding: 0 0.5rem;
     }
-    
+
     .contact-content p {
         font-size: 1rem;
         word-break: break-word;
     }
-    
+
     .contact-content .contact-item .contact-icon {
         width: 28px;
         height: 28px;
     }
-    
+
     .footer {
         padding: 1.5rem 1rem;
         font-size: 0.85rem;
@@ -632,7 +621,7 @@ section {
     .navbar {
         padding: 0.65rem 0;
     }
-    
+
     .logo {
         font-size: 1rem;
     }
@@ -649,11 +638,11 @@ section {
         width: auto;
         min-width: 0;
     }
-    
+
     .nav-links a {
         font-size: 0.95rem;
     }
-    
+
     .hero h1 {
         font-size: clamp(1.75rem, 15vw, 2.5rem);
         margin-bottom: 0.75rem;
@@ -671,30 +660,30 @@ section {
         right: 0;
         bottom: 0;
     }
-    
+
     .subtitle {
         font-size: clamp(0.9rem, 6vw, 1.2rem);
         margin-bottom: 1.5rem;
     }
-    
+
     .cta-button {
         padding: 0.65rem 1.5rem;
         font-size: 0.9rem;
     }
-    
+
     section {
         padding: 2.5rem 1rem;
     }
-    
+
     .section-title {
         font-size: clamp(1.5rem, 10vw, 2rem);
         margin-bottom: 1.5rem;
     }
-    
+
     .about-content {
         font-size: 0.95rem;
     }
-    
+
     .projects-grid {
         gap: 1.25rem;
     }
@@ -702,12 +691,12 @@ section {
     .project-image {
         height: 180px;
     }
-    
+
     .project-card h3 {
         font-size: 1.1rem;
         padding: 0;
     }
-    
+
     .project-card p {
         font-size: 0.9rem;
         padding: 0;
