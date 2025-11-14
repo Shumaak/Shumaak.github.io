@@ -322,6 +322,11 @@ section {
     background: var(--light);
 }
 
+.about-content {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
 .hero .profile-pic {
     /* image fills the wrapper; visual decoration is applied to .pfp-wrap */
     width: 100%;
@@ -408,9 +413,16 @@ section {
 }
 
 .project-card p {
-    color: var(--gray);
+    color: var(--white);
     line-height: 1.6;
     margin: 0;
+}
+
+.project-card p a {
+    color: var(--white);
+    text-decoration: underline;
+    pointer-events: auto;
+    cursor: pointer;
 }
 
 .project-body {
@@ -601,7 +613,7 @@ section {
     }
 
     .about-content {
-        font-size: 1rem;
+        font-size: 1.05rem;
         padding: 0 0.5rem;
     }
 
@@ -703,7 +715,7 @@ section {
     }
 
     .about-content {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     .projects-grid {
