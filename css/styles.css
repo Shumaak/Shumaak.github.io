@@ -375,6 +375,14 @@ section {
     position: relative;
 }
 
+.project-image-music img {
+    transform: scale(1.1);
+}
+
+.project-image-kitchen img {
+    transform: scale(1.2);
+}
+
 .project-image img {
     position: absolute;
     inset: 0;
