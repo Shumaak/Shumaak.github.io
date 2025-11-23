@@ -533,6 +533,10 @@ section {
     flex: 0 0 auto;
 }
 
+.contact-content .contact-item .contact-icon-social {
+    filter: invert(1);
+}
+
 .contact-content .contact-item .label {
     font-weight: 600;
 }
