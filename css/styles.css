@@ -182,6 +182,41 @@ body {
     width: 100%;
 }
 
+.nav-contacts {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin-left: auto;
+}
+
+.nav-contacts .contact-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+}
+
+.nav-contacts .contact-item:hover,
+.nav-contacts .contact-item:focus-visible {
+    transform: translateY(-1px);
+}
+
+.nav-contacts svg.contact-icon {
+    color: var(--white);
+}
+
+.nav-contacts img.contact-icon {
+    filter: brightness(0) invert(1);
+}
+
+.nav-contacts .contact-icon {
+    width: 28px;
+    height: 28px;
+    display: block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
 .hero {
     min-height: 100vh;
     display: flex;
